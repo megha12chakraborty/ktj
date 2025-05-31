@@ -3,11 +3,144 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MovieMania - Your Movie Library</title>
+  <title>Movies Library</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Content goes here -->
-  <h1>Welcome to MovieMania!</h1>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">🎬 MoviesLibrary</div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">☰</label>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#trending">Trending</a></li>
+      <li><a href="#shows">Shows</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-left">
+      <h1>Stream the Best!</h1>
+      <p>Your go-to platform for trending movies and popular shows</p>
+      <a href="#trending" class="btn">Explore Now</a>
+    </div>
+    <div class="hero-right">
+      <img src="images/inception.jpg" alt="Intro Image" class="intro-img">
+    </div>
+  </section>
+
+  <!-- Trending Movies -->
+  <section id="trending">
+    <h2>Trending Movies</h2>
+    <p>Top picks just for you!</p>
+    <div class="card-container">
+      <div class="card">
+        <img src="images/8ammetro.jpg" alt="8am metro">
+        <div class="card-text">
+          <h3>8am Metro</h3>
+          <p>A soul-searching journey in a metro ride.</p>
+          <span class="duration">1h 45m</span>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/fresh.jpg" alt="Fresh">
+        <div class="card-text">
+          <h3>Fresh</h3>
+          <p>A thriller full of twists and surprises.</p>
+          <span class="duration">2h 10m</span>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/lion.jpg" alt="Lion">
+        <div class="card-text">
+          <h3>Lion</h3>
+          <p>Based on an inspiring true story.</p>
+          <span class="duration">2h 9m</span>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/ghoreandbaire.jpg" alt="Ghore and Baire">
+        <div class="card-text">
+          <h3>Ghore and Baire</h3>
+          <p>A tale of love and politics.</p>
+          <span class="duration">1h 50m</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Shows -->
+  <section id="shows">
+    <h2>Popular Shows</h2>
+    <p>Binge-worthy TV for your evenings</p>
+    <div class="card-container">
+      <div class="card">
+        <img src="images/youngsheldon.jpg" alt="Young Sheldon">
+        <div class="card-text">
+          <h3>Young Sheldon</h3>
+          <p>Genre: Comedy | Seasons: 6 | Episodes: 127</p>
+          <p>The early life of Sheldon Cooper from TBBT.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/littleamerica.jpg" alt="Little America">
+        <div class="card-text">
+          <h3>Little America</h3>
+          <p>Genre: Drama | Seasons: 2 | Episodes: 16</p>
+          <p>Stories of immigrants in America.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/littlemisssunshine.jpg" alt="Little Miss Sunshine">
+        <div class="card-text">
+          <h3>Little Miss Sunshine</h3>
+          <p>Genre: Comedy Drama | 1 season</p>
+          <p>A family's road trip adventure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- User Reviews -->
+  <section id="reviews">
+    <h2>User Reviews</h2>
+    <p>What viewers are saying</p>
+    <div class="reviews-container">
+      <div class="review-card">
+        <img src="https://i.pravatar.cc/100?img=3" alt="User">
+        <h4>Aryan</h4>
+        <p>Loved the platform UI! Easy to navigate.</p>
+      </div>
+      <div class="review-card">
+        <img src="https://i.pravatar.cc/100?img=5" alt="User">
+        <h4>Neha</h4>
+        <p>Excellent movie selection. Highly recommend!</p>
+      </div>
+    </div>
+    <form>
+      <h3>Leave a Review</h3>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Review" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="socials">
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+      <a href="#">YouTube</a>
+    </div>
+    <div class="footer-links">
+      <a href="#" target="_blank">Terms & Conditions</a>
+      <a href="#" target="_blank">Privacy Policy</a>
+    </div>
+    <a href="#hero" class="back-to-top">↑</a>
+  </footer>
 </body>
 </html>
